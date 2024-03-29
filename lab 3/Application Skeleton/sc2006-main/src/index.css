@@ -1,0 +1,260 @@
+/* App.css */
+
+/* Reset some basic elements */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the entire app container */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Header styles */
+/* Header styles */
+.app-header {
+  display: flex;
+  justify-content: space-between; /* Align items on both ends */
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Left-aligned items (Logo and Navigation) */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding-left: 0; /* Remove padding */
+  margin-left: 1rem; /* Spacing between logo and nav links */
+}
+
+.nav-links li {
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+/* Right-aligned items (User Info and Fund Info) */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.fund-info {
+  margin-right: 1rem;
+  background-color: #ff4136;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user-greeting {
+  cursor: pointer;
+}
+
+.user-options {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  display: none;
+}
+
+.user-menu:hover .user-options {
+  display: block;
+}
+
+.user-options li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.user-options li:hover{
+  background-color: black;
+  color: white;
+}
+/* Main content styles */
+main {
+  display: flex;
+}
+
+/* Address selector styles */
+.address-selector {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  max-width: 600px; /* Adjust as needed */
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Simple shadow for styling */
+}
+
+.address-block {
+  display: flex;
+  flex-direction: column; /* Align input below header */
+  margin-bottom: 1rem;
+}
+
+.address-block h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.address-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+}
+
+/* Add a little space between the input fields and their labels */
+.address-block.current h2,
+.address-block.destination h2 {
+  margin-bottom: 0.25rem;
+}
+
+/* Style the input fields to match the mockup */
+.address-block.current input,
+.address-block.destination input {
+  padding: 10px;
+  margin: 0; /* Adjust margin as needed */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Ensure that the last element doesn't have a margin at the bottom */
+.address-block:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Map section styles */
+.map {
+  flex: 3;
+  height: 500px; /* Example fixed height, adjust as needed */
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add more styles as necessary */
+
+.route-planner {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.map-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+.addresses,
+.route-info {
+  margin-top: 10%; /* Adjust as needed */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 4px;
+  z-index: 2; /* To make sure it's above the map */
+}
+
+.address-input {
+  display: block;
+  width: 100%; /* Full width of the form container */
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.time-info,
+.routes {
+  margin-top: 1rem;
+}
+
+.time-info label,
+.time-info input,
+.routes .route {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.routes .route {
+  background: #f8f8f8;
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+}
+.route div{
+  margin: 10px;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.time-info-container{
+  display: flex;
+  justify-content: space-between;
+}
+.time-info-container input, .time-info-container label{
+  margin: 10px;
+}
+.travel-mode, .filter-mode{
+  margin-top: 12%;
+}
+.travel-mode-container div{
+  display: flex;
+  justify-content: space-between;
+}
+.travel-mode-container label{
+  display: block;
+  margin: 10px;
+}
+.filter-mode-container ul{
+  list-style-type: none;
+  margin-left:10px;
+}
+.filter-mode-container ul, .routes, .travel-mode-container{
+  padding: 20px;
+  border: 1px solid black;
+}
