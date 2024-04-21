@@ -1,0 +1,50 @@
+.error-message{
+  color: red;
+}
+
+.edit-profile {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-right: rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit-profile h1 {
+    text-align: center;
+  }
+  
+  .edit-profile form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-profile label {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+  }
+  
+  .edit-profile input {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .edit-profile button {
+    padding: 10px;
+    background-color: #0082f8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-profile button:hover {
+    background-color: #4cae4c;
+  }
+  

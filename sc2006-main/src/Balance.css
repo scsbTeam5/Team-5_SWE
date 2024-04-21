@@ -1,0 +1,28 @@
+.balance-button {
+  padding: 0.2rem 0.5rem;
+  background-color: #00FF7F;
+  border-radius: 5px;
+}
+
+.balance-button a:hover {
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+.balance-button-low {
+  padding: 0.2rem 0.5rem;
+  background-color: #DC143C;
+  border-radius: 5px;
+}
+
+.balance-button-low a:hover {
+
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
